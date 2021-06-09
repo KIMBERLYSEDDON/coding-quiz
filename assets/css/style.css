@@ -1,0 +1,48 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+content {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid gray;
+    border-style:double;
+    padding: 20px;
+    max-width: 50%;
+    margin: auto;
+}
+.display-none {
+    display: none;
+}
+.header a {
+    font-size: 20px;
+}
+.header {
+    padding: 60px;
+    margin: auto;
+}
+.intro {
+    flex-direction: column;
+}
+.intro h1 {
+    color: #611a73;
+}
+.quiz-questions {
+    flex-direction: column;
+    justify-content: left;
+}
+#high-scores {
+    flex-direction: column;
+}
+#initials {
+    padding: 10px;
+}
+#start {
+    max-width: fit-content;
+    padding: 10px;
+    color: aliceblue;
+    background-color: #611a73;
+    margin: auto;
+}
+#timer {
+    float: right;
+}
