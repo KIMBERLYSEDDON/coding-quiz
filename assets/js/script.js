@@ -48,6 +48,7 @@ var timerEl = document.getElementById("timer");
 var timeLeft = 60;
 var topScores = [];
 var score = 50;
+var yourScore = document.querySelector("#your-score");
 var result = document.getElementById("result");
 var savedScoresEl = document.getElementById("saved-scores");
 var question = document.getElementById("question");
@@ -95,7 +96,6 @@ function checkAnswers(event) {
   if (currentQuestion < 4) {
     currentQuestion++;
     generateQuestions();
-    console.log("hello");
   } else {
       quizEl.setAttribute("class", "display-none")
     renderHighscores();
@@ -116,7 +116,7 @@ function setTimer() {
 
 function renderHighscores() {
     highscoreForm.classList.remove("display-none")
-    result.textContent = score;
+    yourScore.textContent = "Wow! Your score is: " + score;
     savedScoresEl.innerHTML = "";
 
     var savedScores = JSON.parse(localStorage.getItem("topScores"));
